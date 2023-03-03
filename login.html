@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login Page</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="lstyle.css">
+</head>
+<body>
+
+<h1><b>Student Skillset System</b></h1>
+<script>
+  function user1() {
+    var user = document.getElementById('username').value
+    var pass = document.getElementById('password').value
+    if (user == "venkat" && pass == "123") {
+      window.open("v_p1.html")
+      alert('correct username')
+    }
+    else if (user == "yash" && pass =="456") 
+    {
+      window.open("y_p1.html")
+      alert('correct username')
+    }
+    else {
+      alert('incorrect username or password')
+    }
+  }
+</script>
+<div class="bg-img">
+  <form class="container">
+    <h2>Login</h2>
+
+    <label for="email"><b>UserId</b></label>
+    <input type="text" name="username" id="username" Placeholder="Username"><br>
+    <label for="psw"><b>Password</b></label>
+    <input type="password" name="password" id="password" Placeholder="Password"><br>
+    <button onclick="user1()" class="btn">Submit</button>
+  </form>
+</div>
